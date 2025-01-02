@@ -15,6 +15,10 @@ async def lifespan(app: FastAPI):
     
     # Make the model available in the app state
     app.state.model = model
+    
+    # create a temp dir if it doesn't exist
+    if not os.path.exists("./temp"):
+        os.makedirs("./temp")
 
     # Yield to start the app
     yield

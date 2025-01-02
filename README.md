@@ -21,15 +21,26 @@ cd whisper-python
 ```
 2. create a virtual-environment
 ```bash
-python -m venv whisper-python
+python3 -m venv whisper-python
 ```
-3. install required dependecies
+3. change to venv
+```bash
+source whisper-python/bin/activate
+```
+4. install required dependecies
 ```
 pip install -r requirements.txt
 ```
-4. install ffmpeg(Linux Example)
+5. install ffmpeg(Linux Example)
 ```
 apt-get install ffmpeg
+```
+6. run python test file or start a fastAPI server
+```bash
+#dev
+fastapi dev api.py
+#prod
+fastapi run api.py
 ```
 
 ## Usage
