@@ -27,6 +27,10 @@ python -m venv whisper-python
 ```
 pip install -r requirements.txt
 ```
+4. install ffmpeg(Linux Example)
+```
+apt-get install ffmpeg
+```
 
 ## Usage
 
