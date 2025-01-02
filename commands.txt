@@ -1,0 +1,6 @@
+Exemplo:
+
+whisper ola-tudo-bem.mp3 --model turbo --model_dir ./models --task transcribe --language Portuguese
+
+model -> modelo que vamos usar - https://github.com/openai/whisper?tab=readme-ov-file#available-models-and-languages
+model_dir -> diretorio onde vai ficar armazenado o modelo(nesse caso fica no ./models desse projeto aqui)
